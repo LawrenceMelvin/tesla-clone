@@ -7,6 +7,7 @@ import {
   Route,
   Redirect,
 } from 'react-router-dom'
+import alanBtn from '@alan-ai/alan-sdk-web'
 import Menu from './Menu'
 import HeaderBlock from './HeaderBlock'
 import Login from './Login'
@@ -16,7 +17,21 @@ import Signup from './Signup'
 import TeslaAccount from './TeslaAccount'
 import { auth } from './firebase'
 
+const alanKey = 'afb0ee3c8c3b1d7957110efe880d8d022e956eca572e1d8b807a3e2338fdd0dc/stage'
 function App() {
+  useEffect(() => {
+    alanBtn({
+        key: alanKey,
+        onCommand: ({command}) => {
+            if(command === 'test command'){
+                alert('This part worked');
+            }
+            if(command === '3d model'){
+                alert('opening 3d simulation')
+            }
+        } 
+    })
+  }, [])
   const user = useSelector(selectUser)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const dispatch = useDispatch()

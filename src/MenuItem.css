@@ -4,7 +4,7 @@
   cursor: pointer;
 }
 
-.menuItem > h4 {
+.link {
   font-weight: 500;
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -12,4 +12,6 @@
   font-size: 15px;
   padding-left: 10px;
   cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
