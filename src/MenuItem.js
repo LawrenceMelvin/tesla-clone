@@ -6,7 +6,7 @@ function MenuItem({ title, link }) {
   return (
     <div className='menuItem'>
       {/* <h4 onClick={onClick}>{title}</h4> */}
-      <Link className='link' to='/chat'>{title}</Link>
+      <Link className='links' to={link}>{title}</Link>
     </div>
   )
 }

@@ -40,7 +40,6 @@ function TeslaAccount({ isMenuOpen, setIsMenuOpen }) {
           <Link to='/teslaaccount'>Kiger</Link>
           <Link to='/teslaaccount'>City K-ZE</Link>
           <Link to='/teslaaccount'>Shop</Link>
-          <Link to='/teslaaccount'>Renult Account</Link>
           <Link onClick={logoutOfApp}>Log out</Link>
           <div
             className='teslaAccount__menu'
@@ -56,7 +55,7 @@ function TeslaAccount({ isMenuOpen, setIsMenuOpen }) {
       </div>
       <div className='teslaAccount__info'>
         <div className='teslaAccount__person'>
-          <h4>{user?.displayName + "'s"} Renult</h4>
+          <h4>Welcome {user?.displayName }</h4>
         </div>
         <div className='teslaAccount__infoRight'>
           <Link>Home</Link>

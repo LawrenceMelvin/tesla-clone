@@ -16,6 +16,8 @@ import { login, logout, selectUser } from './features/userSlice'
 import Signup from './Signup'
 import TeslaAccount from './TeslaAccount'
 import { auth } from './firebase'
+import Chat from './Chat'
+import Video from './Video'
 
 const alanKey = 'afb0ee3c8c3b1d7957110efe880d8d022e956eca572e1d8b807a3e2338fdd0dc/stage'
 function App() {
@@ -79,6 +81,24 @@ function App() {
                   setIsMenuOpen={setIsMenuOpen}
                 />
                 {isMenuOpen && <Menu />}
+              </>
+            )}
+          </Route>
+          <Route exact path='/chat'>
+          {!user ? (
+              <Redirect to='/login' />
+            ) : (
+              <>
+                <Chat/>
+              </>
+            )}
+          </Route>
+          <Route exact path='/video'>
+          {!user ? (
+              <Redirect to='/login' />
+            ) : (
+              <>
+                <Video />
               </>
             )}
           </Route>
