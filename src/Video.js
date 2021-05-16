@@ -1,6 +1,7 @@
-import React from 'react'
-import Webcam from 'react-webcam'
-import './Video.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Webcam from 'react-webcam';
+import './Video.css';
 
 const videoConstraints = {
     width: 500,
@@ -27,7 +28,7 @@ function Video() {
             <br/>
             <br/>
             <div style={{display:'flex', justifyContent:'center'}}>
-                <button className='endVideo'>End Chat</button>
+               <Link to='/feedback'><button>Feedback form</button></Link>
             </div>
         </div>
     )

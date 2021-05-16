@@ -18,6 +18,7 @@ import TeslaAccount from './TeslaAccount'
 import { auth } from './firebase'
 import Chat from './Chat'
 import Video from './Video'
+import Feedback from './Feedback'
 
 const alanKey = 'afb0ee3c8c3b1d7957110efe880d8d022e956eca572e1d8b807a3e2338fdd0dc/stage'
 function App() {
@@ -70,6 +71,9 @@ function App() {
           </Route>
           <Route exact path='/signup'>
             <Signup />
+          </Route>
+          <Route exact path='/feedback'>
+            <Feedback />
           </Route>
           <Route exact path='/teslaaccount'>
             {!user ? (

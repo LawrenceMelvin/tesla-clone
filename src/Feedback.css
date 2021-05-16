@@ -1,0 +1,24 @@
+.formHeading{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.feedBack{
+    border: 2px solid black;
+    margin: 10px;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+.feedOne{
+    display: flex;
+    justify-content: center;
+    padding-top: 14px;
+}
+.feedTwo, .feedThree, .feedText, .submitBtn{
+    padding-top: 18px;
+    display: flex;
+    justify-content: center;
+}
+.submitBtn{
+    padding-bottom: 14px;
+}

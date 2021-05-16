@@ -1,5 +1,10 @@
-.endVideo{
-    padding:"10px";
-    border:'none';
-    border-radius: '15px';
+button{
+    background-color: yellowgreen;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: medium;
+    cursor: pointer;
 }
