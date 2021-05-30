@@ -73,6 +73,7 @@ function TeslaAccount({ isMenuOpen, setIsMenuOpen }) {
         <Car
           imgSrc="https://imgd.aeplcdn.com/1280x720/cw/ec/39217/Renault-Captur-Right-Front-Three-Quarter-153590.jpg?wm=0&q=85"
           model='Triber'
+          testDrive
         />
       </div>
     </div>
