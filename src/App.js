@@ -20,21 +20,11 @@ import Chat from './Chat'
 import Video from './Video'
 import Feedback from './Feedback'
 
+
 const alanKey = 'afb0ee3c8c3b1d7957110efe880d8d022e956eca572e1d8b807a3e2338fdd0dc/stage'
+
 function App() {
-  useEffect(() => {
-    alanBtn({
-        key: alanKey,
-        onCommand: ({command}) => {
-            if(command === 'test command'){
-                alert('This part worked');
-            }
-            if(command === '3d model'){
-                alert('opening 3d simulation')
-            }
-        } 
-    })
-  }, [])
+  
   const user = useSelector(selectUser)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const dispatch = useDispatch()
@@ -56,7 +46,40 @@ function App() {
       }
     })
   }, [dispatch])
-
+  useEffect(() => {
+    alanBtn({
+        key: alanKey,
+        onCommand: ({command}) => {
+            if(command === '3d model'){
+                window.open("https://renaultespace.littleworkshop.fr/", "_self")
+            }
+            if(command === 'chat'){
+              window.open("http://localhost:3000/chat","_self")
+            }
+            if(command === 'video'){
+              window.open("http://localhost:3000/video","_self")
+            }
+            if(command === 'form'){
+              window.open("http://localhost:3000/feedback","_self")
+            }
+            if(command === 'order'){
+              window.open("https://www.renault.co.in/book-your-renault.html","_self")
+            }
+            if(command === 'register'){
+              window.open("https://www.renault.co.in/contact/buy-a-car.html","_self")
+            }
+            if(command === 'test drive'){
+              window.open("https://www.renault.co.in/contact/book-a-test-drive.html?modelAdminId=triber-xbc-ph1","_self")
+            }
+            if(command === 'inventory'){
+              window.open("http://localhost:3000/teslaaccount","_self")
+            }
+            if(command === 'showroom'){
+              window.open("https://www.renault.co.in/","_self")
+            }
+        }
+    })
+  }, [])
   return (
     <Router>
       <div className='app'>
@@ -72,9 +95,7 @@ function App() {
           <Route exact path='/signup'>
             <Signup />
           </Route>
-          <Route exact path='/feedback'>
-            <Feedback />
-          </Route>
+          
           <Route exact path='/teslaaccount'>
             {!user ? (
               <Redirect to='/login' />
@@ -103,6 +124,15 @@ function App() {
             ) : (
               <>
                 <Video />
+              </>
+            )}
+          </Route>
+          <Route exact path='/feedback'>
+          {!user ? (
+              <Redirect to='/login' />
+            ) : (
+              <>
+                <Feedback />
               </>
             )}
           </Route>

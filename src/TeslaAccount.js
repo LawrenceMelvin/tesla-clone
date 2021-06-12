@@ -35,11 +35,11 @@ function TeslaAccount({ isMenuOpen, setIsMenuOpen }) {
           </Link>
         </div>
         <div className='teslaAccount__links'>
-          <Link to='/teslaaccount'>Duster</Link>
-          <Link to='/teslaaccount'>Triber</Link>
-          <Link to='/teslaaccount'>Kiger</Link>
-          <Link to='/teslaaccount'>City K-ZE</Link>
-          <Link to='/teslaaccount'>Shop</Link>
+          <a href={"https://www.renault.co.in/book-your-renault.html"}>
+          Book your Renault</a>
+          <a href={"https://www.renault.co.in/contact/buy-a-car.html"}>Register your intrest</a>
+          {/* <Link to='/teslaaccount'>Register your intrest</Link> */}
+          {/* <Link to='/teslaaccount'>Shop</Link> */}
           <Link onClick={logoutOfApp}>Log out</Link>
           <div
             className='teslaAccount__menu'
@@ -57,12 +57,12 @@ function TeslaAccount({ isMenuOpen, setIsMenuOpen }) {
         <div className='teslaAccount__person'>
           <h4>Welcome {user?.displayName }</h4>
         </div>
-        <div className='teslaAccount__infoRight'>
+        {/* <div className='teslaAccount__infoRight'>
           <Link>Home</Link>
           <Link>Account</Link>
           <Link>History</Link>
           <Link onClick={logoutOfApp}>Sign out</Link>
-        </div>
+        </div> */}
       </div>
       <div className='teslaAccount__car'>
         <Car

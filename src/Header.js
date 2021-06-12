@@ -17,11 +17,9 @@ function Header({ isMenuOpen, setIsMenuOpen }) {
         </Link>
       </div>
       <div className='header__links'>
-        <Link to='/'>Duster</Link>
-        <Link to='/'>Kiger</Link>
-        <Link to='/'>Triber</Link>
-        <Link to='/'>City K-ZE</Link>
-        <Link to='/'>Solar Roof</Link>
+        <Link to='/teslaaccount'>Duster</Link>
+        <Link to='/teslaaccount'>Kiger</Link>
+        <Link to='/teslaaccount'>Triber</Link>
       </div>
       <div className='header__right'>
         <Link to='/' className={isMenuOpen && 'header__link--hidden'}>
