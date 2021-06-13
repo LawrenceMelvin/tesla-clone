@@ -27,12 +27,12 @@ function TeslaAccount({ isMenuOpen, setIsMenuOpen }) {
     <div className='teslaAccount'>
       <div className='teslaAccount__header'>
         <div className='teslaAccount__logo'>
-          <Link to='/'>
             <img
               src='https://car-logos.net/wp-content/uploads/2018/09/renault-logo.jpg'
               alt=''
+              style={{width:'2.5cm',height:'2cm'}}
             />
-          </Link>
+    
         </div>
         <div className='teslaAccount__links'>
           <a href={"https://www.renault.co.in/book-your-renault.html"}>

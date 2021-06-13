@@ -74,8 +74,17 @@ function App() {
             if(command === 'inventory'){
               window.open("http://localhost:3000/teslaaccount","_self")
             }
-            if(command === 'showroom'){
+            if(command === 'showroom' || command === "petrol"){
               window.open("https://www.renault.co.in/","_self")
+            }
+            if(command === 'homepage'){
+              window.open("http://localhost:3000/","_self")
+            }
+            if(command === 'login'){
+              window.open("http://localhost:3000/login","_self")
+            }
+            if(command === 'signup'){
+              window.open("http://localhost:3000/signup","_self")
             }
         }
     })
