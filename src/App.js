@@ -86,6 +86,15 @@ function App() {
             if(command === 'signup'){
               window.open("http://localhost:3000/signup","_self")
             }
+            if(command === 'service'){
+              window.open("https://www.renault.co.in/renault-service.html")
+            }
+            if(command === 'help'){
+              window.open("https://www.renault.co.in/contact.html")
+            }
+            if(command === 'dealer'){
+              window.open("https://www.renault.co.in/find-a-dealer.html")
+            }
         }
     })
   }, [])
